@@ -4,133 +4,107 @@
 }
 body{
      font-size: 16px;
-}
-header, nav{
-    display: block;
+     font-family: 'Open Sans', 'Courgette';
 }
 
-header{
-    background: #1c1821;
-    position: relative;
-    height: 100px;
-    width: 100%;
-    z-index: 2
+/*******UTILITIES******/
+
+.bg-purple{
+	background-color: #2D2735;
 }
 
-a{
-	text-decoration: none;
+.bg-black{
+	background-color: #1B1821;
 }
 
-.logo{
-    background: url(../image/header-logo.png) no-repeat 0 0;
-    background-size: cover;
-    display: block;
-    float: left;
-    margin: 0px 10px 0;
-    width: 300px;
-    height: 80px;
+.text-yellow{
+	color: #F6B96C;
 }
 
-.menu{
-	float: right;
-	padding: 30px 40px;
-	width: 100%;
-}   
-
-.menu ul{
-    list-style: none;
-    font-size: 1rem;
+.text-white{
+	color: white;
 }
-        
-.menu li{
-	display: block;
-	float: left;
+
+.pd-3{
+	padding: 3%;
+}
+
+.pd-5{
+	padding: 5%;
+}
+
+.text-center{
 	text-align: center;
+}
+
+.font-courgette{
+	font-family: 'Courgette';
+}
+.italic{
 	font-style: italic;
 }
 
-.menu li a{
-    display: block;
-    color: #fff;
-    height: 60px;
-    padding: 0 10px;
+.w-100{
+	width: 100%;
 }
 
-.menu li a:hover{
-    background: #151a1e;
-    color: #ffc700;
-    text-decoration: none;
+.text-left{
+	text-align: left;
 }
-    
-/* Estilos .nav-mobile y lo ocultamos */
-.nav-mobile{
-	display: none;
-	background: url(../image/nav.png) no-repeat center center;
-	float: right;
-	width: 60px;
-	height: 60px;
-	position: absolute;
-	right: 0;
-	top:0;
-	opacity: .6;
-}   
 
-/* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
-.nav-mobile.nav-active{
-    opacity: 1;
+.radius-4p{
+	border-radius: 4px;
 }
+/*******BANNER******/
+
+.bg-lirios{
+	background: url("../image/header-image.jpg");
+	background-size: cover;
+	padding: 100px 200px;
+}
+
+.spring h1{
+	font-size: 80px;
+}
+
+.spring{
+	padding: 10% 0 3% 0;
+}
+
+/*****FLOWERS******/
+
+.flowers p{
+	padding: 10px 0 20px 0;
+}
+
+.flowers h3{
+	margin-top: 10px;
+}
+/****ARTICLE*****/
+.article h3{
+	padding-top: 10px;
+}
+
+.article p{
+	padding: 10px;
+}
+
+.search{
+	display: block;
+	margin: auto;
+	border: none;
+	width: 100%;
+	height: 50px;
+	color: white;
+	font-size: 1rem;
+}
+
 
 
 /* Responsive */
 
 @media screen and (max-width : 920px) {
-	h2{font-size: 40px;}
-    
-    .nav-mobile{
-     display: block; }
-
-    /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo  */
-    .menu{
-    width: 100%;
-    float: none;
-    padding-top: 60px;
-    }
-        /* Convertimos nuestra lista de enlaces en un menú horizontal */
-    .menu ul{
-        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
-        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
-        box-shadow: 0 1px 2px rgba(0,0,0,.5);
-        max-height: 0;
-        overflow: hidden;
-    }
- 
-    .menu li{
-        background: #33363b;
-        border-bottom: 1px solid #282b30;
-        float: none;
-    }
-
-   
-    .menu li:last-child{
-     border-bottom: 0;
- 	}
-
-    .menu li a{
-        padding: 15px 0;
-        height: auto;
-        line-height: normal;
-    }
-    .menu li a:hover{background:#2a2d33}
-
-    /* Agregamos una animación al despligue del menú */
-    .menu ul.open-menu{
-        max-height: 400px;
-        -webkit-transition: max-height .4s;
-        -moz-transition: max-height .4s;
-        -ms-transition: max-height .4s;
-        -o-transition: max-height .4s;
-        transition: max-height .4s;
-    }
+	
 }
 
 @media screen and (max-width: 600px) {

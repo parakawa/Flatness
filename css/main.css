@@ -66,7 +66,7 @@ a{
 }
 
 .spring h1{
-	font-size: 80px;
+	font-size: 5rem;
 }
 
 .spring{
@@ -125,11 +125,17 @@ iframe{
 /* Responsive */
 
 @media screen and (max-width : 920px) {
-	
+	.col-4, .col-7, .col-5{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 600px) {
 	.col-4, .col-7, .col-5{
 		width: 100%;
 	}
+
+	.bg-lirios{
+	padding: 7%;
+}
 }

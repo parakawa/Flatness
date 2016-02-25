@@ -62,7 +62,7 @@ a{
 .bg-lirios{
 	background: url("../image/header-image.jpg");
 	background-size: cover;
-	padding: 100px 200px;
+	padding: 10% 20%;
 }
 
 .spring h1{
@@ -129,5 +129,7 @@ iframe{
 }
 
 @media screen and (max-width: 600px) {
-
+	.col-4, .col-7, .col-5{
+		width: 100%;
+	}
 }

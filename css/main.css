@@ -137,5 +137,9 @@ iframe{
 
 	.bg-lirios{
 	padding: 7%;
-}
+	}
+
+	.bg-purple .col-5 .bg-black{
+		display: none;
+	}
 }
